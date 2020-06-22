@@ -1,0 +1,42 @@
+# Gin-Vue-Admin Global Configuration
+
+# casbin configuration
+casbin:
+  model-path: './resource/rbac_model.conf'
+
+# jwt configuration
+jwt:
+  signing-key: 'xiangshou_key'
+
+# mysql connect configuration
+mysql:
+  username: root
+  password: '123456'
+  path: '127.0.0.1:3306'
+  db-name: 'myApp'
+  config: 'charset=utf8&parseTime=True&loc=Local'
+  max-idle-conns: 10
+  max-open-conns: 10
+  log-mode: false
+'
+
+
+# redis configuration
+redis:
+  addr: '127.0.0.1:6379'
+  password: ''
+  db: 0
+
+
+# captcha验证码 configuration
+captcha:
+  key-long: 4
+  img-width: 120
+  img-height: 40
+
+# logger configuration
+log:
+  prefix: '[MALL-ADMIIN]'
+  log-file: true
+  stdout: 'DEBUG'
+  file: 'DEBUG'
